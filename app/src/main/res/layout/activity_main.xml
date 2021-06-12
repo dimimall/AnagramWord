@@ -11,34 +11,39 @@
         android:id="@+id/wordTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="32dp"
         android:text="Word To Find"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/wordEnteredEt"
-        app:layout_constraintTop_toTopOf="@+id/liveText" />
+        app:layout_constraintBottom_toTopOf="@+id/wordEnteredEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/wordEnteredEt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="200dp"
         android:inputType="textCapCharacters"
-        app:layout_constraintStart_toStartOf="@+id/validate"
-        app:layout_constraintTop_toBottomOf="@+id/wordTv" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/validate"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="9dp"
         android:text="Validate"
         app:layout_constraintEnd_toEndOf="@+id/newGame"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/animator"
+        app:layout_constraintHorizontal_bias="1.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wordEnteredEt" />
 
     <Button
@@ -46,10 +51,12 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:text="New Game"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/validate" />
 
     <TextView

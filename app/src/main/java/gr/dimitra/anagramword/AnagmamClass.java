@@ -1,5 +1,8 @@
 package gr.dimitra.anagramword;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class AnagmamClass {
@@ -28,31 +31,116 @@ public class AnagmamClass {
 
 
     public static String randomWordGreece() {
-        return WORDSGREECE[RANDOM.nextInt(WORDSGREECE.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSGREECE.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSGREECE.length);
+            String temp = WORDSGREECE[randomIndexToSwap];
+            WORDSGREECE[randomIndexToSwap] = WORDSGREECE[i];
+            WORDSGREECE[i] = temp;
+            word = WORDSGREECE[i];
+        }
+
+        return word;
+
+        //return WORDSGREECE[RANDOM.nextInt(WORDSGREECE.length)];
     }
 
     public static String randomWordItaly() {
-        return WORDSITALIY[RANDOM.nextInt(WORDSITALIY.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSITALIY.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSITALIY.length);
+            String temp = WORDSITALIY[randomIndexToSwap];
+            WORDSITALIY[randomIndexToSwap] = WORDSITALIY[i];
+            WORDSITALIY[i] = temp;
+            word = WORDSITALIY[i];
+        }
+
+        return word;
+        //return WORDSITALIY[RANDOM.nextInt(WORDSITALIY.length)];
     }
 
     public static String randomWordEgypt() {
-        return WORDSEGYPT[RANDOM.nextInt(WORDSEGYPT.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSEGYPT.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSEGYPT.length);
+            String temp = WORDSEGYPT[randomIndexToSwap];
+            WORDSEGYPT[randomIndexToSwap] = WORDSEGYPT[i];
+            WORDSEGYPT[i] = temp;
+            word = WORDSEGYPT[i];
+        }
+
+        return word;
+        //return WORDSEGYPT[RANDOM.nextInt(WORDSEGYPT.length)];
     }
 
     public static String randomWordUk() {
-        return WORDSUK[RANDOM.nextInt(WORDSUK.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSUK.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSUK.length);
+            String temp = WORDSUK[randomIndexToSwap];
+            WORDSUK[randomIndexToSwap] = WORDSUK[i];
+            WORDSUK[i] = temp;
+            word = WORDSUK[i];
+        }
+
+        return word;
+        //return WORDSUK[RANDOM.nextInt(WORDSUK.length)];
     }
 
     public static String randomWordFrance() {
-        return WORDSFRANCE[RANDOM.nextInt(WORDSFRANCE.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSFRANCE.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSFRANCE.length);
+            String temp = WORDSFRANCE[randomIndexToSwap];
+            WORDSFRANCE[randomIndexToSwap] = WORDSFRANCE[i];
+            WORDSFRANCE[i] = temp;
+            word = WORDSFRANCE[i];
+        }
+
+        return word;
+        //return WORDSFRANCE[RANDOM.nextInt(WORDSFRANCE.length)];
     }
 
     public static String randomWordAustralia() {
-        return WORDSAUSTRALIA[RANDOM.nextInt(WORDSAUSTRALIA.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSAUSTRALIA.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSAUSTRALIA.length);
+            String temp = WORDSAUSTRALIA[randomIndexToSwap];
+            WORDSAUSTRALIA[randomIndexToSwap] = WORDSAUSTRALIA[i];
+            WORDSAUSTRALIA[i] = temp;
+            word = WORDSAUSTRALIA[i];
+        }
+
+        return word;
+        //return WORDSAUSTRALIA[RANDOM.nextInt(WORDSAUSTRALIA.length)];
     }
 
     public static String randomWordBrazil() {
-        return WORDSBRAZIL[RANDOM.nextInt(WORDSBRAZIL.length)];
+        Random rand = new Random();
+        String word = null;
+
+        for (int i = 0; i < WORDSBRAZIL.length; i++) {
+            int randomIndexToSwap = rand.nextInt(WORDSBRAZIL.length);
+            String temp = WORDSBRAZIL[randomIndexToSwap];
+            WORDSBRAZIL[randomIndexToSwap] = WORDSBRAZIL[i];
+            WORDSBRAZIL[i] = temp;
+            word = WORDSBRAZIL[i];
+        }
+
+        return word;
+        //return WORDSBRAZIL[RANDOM.nextInt(WORDSBRAZIL.length)];
     }
 
     public static String shuffleWord(String word) {

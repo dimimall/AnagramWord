@@ -2,7 +2,7 @@
     <string name="app_name">AnagramWord</string>
 
     <string-array name="text">
-    <item>Find City</item>
-    <item>From anagram word</item>
+        <item>Find City</item>
+        <item>From anagram word</item>
     </string-array>
 </resources>

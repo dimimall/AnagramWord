@@ -3,6 +3,7 @@ package gr.dimitra.anagramword;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
@@ -100,6 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Loose !", Toast.LENGTH_SHORT).show();
             newGame();
             startTimer();
+        }
+        if (count >= 55){
+            Intent intent = new Intent(MainActivity.this,WinActivity.class);
+            startActivity(intent);
         }
     }
 
